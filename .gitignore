@@ -1,0 +1,5 @@
+__pycache__/
+.vscode
+geckodriver-v0.23.0-linux64/
+*.log
+env/
