@@ -1,10 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
-import time
 
-class Scrapper:
-    path_s = './geckodriver-v0.23.0-linux64/geckodriver'
-    def __init__(self,visible=True,focus_page="https://coinmarketcap.com/"): 
+class Agent:
+    path_s = './geckodriver-v0.23.0-linux64/geckodriver' # Needs to be downloaded
+    def __init__(self,visible=True,focus_page="https://www.google.com.mx"): 
         if visible:
             self.driver = webdriver.Firefox(executable_path = self.path_s)
         else:
